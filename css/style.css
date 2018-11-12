@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+body {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-image: url(/images/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: white;
+    overflow: hidden;
+}
+main {
+    margin-top: 60px;
+}
+.signIn {
+    display: none;
+}
+.registr {
+    display: none;
+}
+#SignIn:checked + .signIn {
+    display: block;
+}
+#Registr:checked + .registr {
+    display: block;
+}
+.serviceinput {
+    display: none;
+}
